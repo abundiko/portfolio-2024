@@ -1,20 +1,18 @@
 import { useGlobalState } from '@/state';
 import { useFrame, useLoader } from '@react-three/fiber';
-import React, { useRef } from 'react'
-import { Group, Mesh, TextureLoader } from 'three'
+import { useRef } from 'react';
+import { Group, Mesh, TextureLoader } from 'three';
 
 const INDEX_2_SCALE = 6;
 const INDEX_1_SCALE = 7;
 const INDEX_3_SCALE = 15;
 const INDEX_2_X = -4;
-const INDEX_3_Y = 3;
-const INDEX_3_Z = -6;
 
 export default function Earth() {
     const { pageIndex } = useGlobalState();
     const ref = useRef<Mesh>(null);
     const groupRef = useRef<Group>(null);
-    useFrame((state, delta) => {
+    useFrame((_, delta) => {
         if (!ref.current || !groupRef.current) return;
         // console.log(delta);
         ref.current.rotation.x += delta * 0.3

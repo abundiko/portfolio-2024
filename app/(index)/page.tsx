@@ -1,6 +1,5 @@
-import HeroScene from "@/components/3d/HeroScene";
-import Hero from "./components/Hero";
 import AboutUs from "./components/AboutUs";
+import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 
 export default function Home() {

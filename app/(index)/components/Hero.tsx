@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import HeroScene from '@/components/3d/HeroScene'
 import { useGlobalState } from '@/state/globalState';
-import { useCallback, useEffect, useState } from 'react';
+import { Suspense, useCallback, useEffect, useState } from 'react';
 
 
 export default function Hero() {
@@ -19,7 +19,7 @@ export default function Hero() {
         }
     }, [pageIndex])
 
-    useEffect(()=>{
+    useEffect(() => {
         setTimeout(() => {
             setIsVisible(pageIndex === 0);
         }, 1600);
@@ -28,8 +28,10 @@ export default function Hero() {
 
     return (
         <motion.section className="h-screen w-full fixed">
-            <HeroScene />
-           {isVisible && <motion.div
+            <Suspense>
+                <HeroScene />
+            </Suspense>
+            {isVisible && <motion.div
                 {...animateProps(pageIndex == 0 ? 0 : 5)}
                 className="absolute gap-y-3 border border-blue-500 bg-blue-800/30 text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg flex flex-col p-10 w-11/12 md:w-[70%] lg:w-[50%] backdrop-blur-lg">
                 <motion.h2
@@ -41,7 +43,7 @@ export default function Hero() {
                 <motion.p
                     {...animateProps(2)}
                     className="text-neutral-400">
-                    Don't mind our name, that was prolly one of the many bad decisions we made.
+                    Don&apos;t mind our name, that was prolly one of the many bad decisions we made.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit reprehenderit,
                     necessitatibus et cum illo dolores. Perferendis natus ipsum vel eum dolore,
                     eaque corporis saepe distinctio aut debitis nobis assumenda consequuntur.</motion.p>
