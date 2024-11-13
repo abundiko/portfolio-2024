@@ -1,13 +1,15 @@
-import AboutUs from "./components/AboutUs";
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
+import About from "./About";
+import Contact from "./Contact";
+import Hero from "./Hero";
+import Projects from "./Projects";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <AboutUs />
+      <About />
       <Projects />
+      <Contact />
     </main>
   );
 }

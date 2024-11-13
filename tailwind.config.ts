@@ -8,10 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        bauserif: "var(--font-bauserif)",
-      },
       colors: {
+        primary:{
+          DEFAULT: "#c6e1ff",
+          dark: "#00002a",
+        },
         background: "#001",
       },
     },

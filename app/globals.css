@@ -2,25 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  scroll-behavior: smooth;
+}
 
 @layer utilities {
-  *{
-    @apply transition-all duration-700
+  .app-container {
+    @apply px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16 2xl:px-20;
+  }
+
+  .btn {
+    @apply py-2.5 rounded-lg inline-flex justify-center items-center gap-2;
+  }
+  .btn-primary {
+    @apply btn bg-primary text-primary-dark px-6 hover:bg-gradient-to-t from-primary-dark/20 to-transparent transition-all duration-500;
+  }
+  .btn-secondary {
+    @apply btn text-primary bg-primary-dark px-6 hover:bg-gradient-to-t from-primary/20 to-transparent transition-all duration-500;
   }
 }
 
-::-webkit-scrollbar{
-  width: 10px;
+body{
+  --scrollbar: #00002a
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
   background-color: transparent;
 }
-::-webkit-scrollbar-track{
-  width: 10px;
+::-webkit-scrollbar-track {
+  width: 8px;
   background-color: transparent;
   background-color: transparent;
 }
-::-webkit-scrollbar-thumb{
-  width: 10px;
-  background-color: white;
-  color: white;
-  border-radius: 10px;
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  background-color: var(--scrollbar);
+  border-radius: 8px;
+}
+
+@keyframes hero-spin {
+  from {
+    transform: rotate(0deg) scale(5);
+  }
+  to {
+    transform: rotate(3600deg) scale(5);
+  }
 }

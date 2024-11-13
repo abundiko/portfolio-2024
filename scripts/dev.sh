@@ -1,5 +1,5 @@
 git add .
 
-git commit -m "fixed type issues, cleaned up and prep for first hosting"
+git commit -m "initial commit"
 
 git push origin dev
