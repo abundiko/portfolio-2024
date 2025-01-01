@@ -19,13 +19,13 @@ export const PROJECTS: Project[] = [
     live: "https://cpntechterminal.com",
   },
   {
-    title: "Hardware Mall",
+    title: "Movee - Movie App",
     description:
-      "An Ecommerce website for shopping electronics (Frontend developer @ Hardware House)",
-    tech: ["React", "Next.js", "Tailwind CSS", "Typescript"],
-    image: "hardwaremall.png",
-    logo: "hardwaremall-logo.png",
-    live: "https://hardwaremall.io",
+      "A free movie app that allows users to search for movies and view details about them, stream and download",
+    tech: ["Next.js", "React native", "Mongo DB", "Typescript", "Tailwind CSS"],
+    image: "movee.png",
+    logo: "movee-logo.png",
+    live: "https://movee.vercel.app/",
   },
   {
     title: "Aify global aluminum",
@@ -36,6 +36,16 @@ export const PROJECTS: Project[] = [
     live: "https://aify-global.com/",
   },
   {
+    title: "OneSync - file sharing",
+    description:
+      "Mobile application for mobile and desktop devices that allows users to share files with others, and sync clipboard between devices.",
+    tech: ["Flutter", "Next.js", "Tailwind CSS", "Local server"],
+    image: "onesync.png",
+    logo: "onesync-logo.png",
+    live: "https://onesync.netlify.app/",
+    github: "https://github.com/abundiko/onesync-website",
+  },
+  {
     title: "Quilly Blog",
     description:
       "A Social blogging full-stack web application where users can write, like, comment and get social with blogs.",
@@ -44,5 +54,14 @@ export const PROJECTS: Project[] = [
     logo: "quilly-logo.png",
     live: "https://quilly-blog.vercel.app/",
     github: "https://github.com/abundiko/quilly",
+  },
+  {
+    title: "Hardware Mall",
+    description:
+      "An Ecommerce website for shopping electronics (Frontend developer @ Hardware House)",
+    tech: ["React", "Next.js", "Tailwind CSS", "Typescript"],
+    image: "hardwaremall.png",
+    logo: "hardwaremall-logo.png",
+    live: "https://hardwaremall.io",
   },
 ];
