@@ -16,7 +16,7 @@ export default function Contact() {
   return (
     <section id="Contact">
       <div className="container mx-auto flex flex-wrap-reverse justify-center mb-5 md:mb-none">
-        <div className="w-11/12 md:w-8/12 md:pt-10 text-center md:text-left">
+        <div className="w-11/12 md:w-8/12 md:pt-10 py-8 text-center md:text-left">
         <motion.h3
         {...animateProps}
         className="font-bold text-2xl md:text-4xl"
