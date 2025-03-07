@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useRef } from "react";
 import { FaGithub } from "react-icons/fa6";
 import { HiLink } from "react-icons/hi2";
+import { useWindowSize } from "react-use";
 
 export default function ProjectCard({
   title,
@@ -24,13 +25,14 @@ export default function ProjectCard({
     offset: ["start 110%", "end 110%"],
   });
   const scale = useTransform(scrollYProgress, [0, 1], [1.2, 1]);
+  const { width: vw } = useWindowSize();
 
   return (
     <motion.div
       ref={ref}
-      style={{
-        scale,
-      }}
+      style={ {
+        scale: vw >= 768 ? scale : 1,
+      } }
       className="shadow-[0_0_30px_1px_#00000011] border gap-4 md:gap-6 border-neutral-200 bg-white text-black p-4 md:p-6 grid md:grid-cols-2 rounded-3xl"
     >
       <Image

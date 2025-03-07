@@ -8,6 +8,7 @@ import { FaDotCircle } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BiDownload } from "react-icons/bi";
+import { ErrorBoundary } from "react-error-boundary";
 
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -34,7 +35,9 @@ export default function Hero() {
               }}
               className="size-[300px] max-sm:hidden absolute top-[-70%] md:top-[-40%] left-[-20%]"
             >
-              <SpinningCube />
+              <ErrorBoundary fallback={<></>}>
+                <SpinningCube />
+              </ErrorBoundary>
             </motion.div>
             <div className="relative max-md:z-[3] bg-primary-dark/10 backdrop-blur-sm p-6 border rounded-xl flex flex-col gap-4">
               <h1 className="text-4xl md:text-5xl xl:text-6xl text-transparent bg-gradient-to-t from-primary to-purple-300 font-semibold [-webkit-text-fill-color:transparent] [-webkit-background-clip:text]">
@@ -68,7 +71,9 @@ export default function Hero() {
               }}
               className="size-[400px] absolute bottom-[-60%] md:bottom-[-50%] right-[-40%] md:right-[-20%]"
             >
-              <SpinningCube />
+              <ErrorBoundary fallback={<></>}>
+                <SpinningCube />
+              </ErrorBoundary>
             </motion.div>
           </div>
         </div>

@@ -2,29 +2,32 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 import { DirectionalLight, Mesh } from "three";
+import {ErrorBoundary} from "react-error-boundary"
 
 export default function SpinningCube() {
   return (
-    <Canvas
-      shadows
-      // camera={{ fov: 75, position: [0, 0, 5], far: 1000, near: 0.1 }}
-    >
-      <ambientLight intensity={0.1} />
-      <OrbitControls enableZoom={false} enablePan={false} />
-      <DLight />
-      <MainCube />
-    </Canvas>
+    <ErrorBoundary fallback={<></>}>
+      <Canvas
+        shadows
+        // camera={{ fov: 75, position: [0, 0, 5], far: 1000, near: 0.1 }}
+      >
+        <ambientLight intensity={0.1} />
+        <OrbitControls enableZoom={false} enablePan={false} />
+        <DLight />
+        <MainCube />
+      </Canvas>
+    </ErrorBoundary>
   );
 }
 
 function MainCube() {
-    const ref = useRef<Mesh>(null);
-    useFrame((_, delta)=>{
-        if(!ref.current || !_) return;
-        ref.current.rotation.x += delta * 0.2
-        ref.current.rotation.z += delta * 0.2
-    })
-    
+  const ref = useRef<Mesh>(null);
+  useFrame((_, delta) => {
+    if (!ref.current || !_) return;
+    ref.current.rotation.x += delta * 0.2;
+    ref.current.rotation.z += delta * 0.2;
+  });
+
   return (
     <>
       <mesh ref={ref} scale={1.2} position={[0, 0, 0]}>
@@ -48,13 +51,18 @@ function MainCube() {
 
 function DLight() {
   const ref = useRef<DirectionalLight>(null);
-//   useHelper(ref as never, DirectionalLightHelper);
+  //   useHelper(ref as never, DirectionalLightHelper);
 
   return (
     <>
-      <directionalLight ref={ref} color={'blue'} position={[-1, 3, 1]} />
+      <directionalLight ref={ref} color={"blue"} position={[-1, 3, 1]} />
       <hemisphereLight color={"red"} groundColor={"green"} intensity={100} />
-      <directionalLight color={'purple'} ref={ref} position={[1, 3, -1]} intensity={4} />
+      <directionalLight
+        color={"purple"}
+        ref={ref}
+        position={[1, 3, -1]}
+        intensity={4}
+      />
     </>
   );
 }
