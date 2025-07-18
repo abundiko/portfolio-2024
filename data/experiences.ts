@@ -1,15 +1,10 @@
-export type Experience =  typeof EXPERIENCES[number]
+export type Experience = (typeof EXPERIENCES)[number];
 
 export const EXPERIENCES = [
   {
-    role: "Flutter Developer",
+    role: "Mobile Developer",
     at: "Binvabian Tech.",
-    year: "2022",
-  },
-  {
-    role: "Frontend Intern",
-    at: "Aptech Computer Edu.",
-    year: "2022",
+    year: "2022-2025",
   },
   {
     role: "Frontend Developer",
@@ -19,11 +14,21 @@ export const EXPERIENCES = [
   {
     role: "Frontend Developer",
     at: "Cesspro Tech.",
-    year: "2023",
+    year: "2023-2024",
   },
   {
     role: "Lead Frontend Developer",
     at: "CPN Tech.",
     year: "2024",
+  },
+  {
+    role: "Fullstack Developer",
+    at: "Symphony Ent.",
+    year: "2024",
+  },
+  {
+    role: "Lead Frontend Developer",
+    at: "HYVEN.",
+    year: "2025",
   },
 ].reverse();

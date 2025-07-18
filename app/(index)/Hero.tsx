@@ -55,7 +55,8 @@ export default function Hero() {
                   My Projects
                 </Link>
                 <a
-                  href="/files/Abundance_Ken-Dickson_Resume.pdf"
+                  // href="/files/Abundance_Ken-Dickson_Resume.pdf"
+                  href="/files/Abundance-resume-21-05-25.pdf"
                   download
                   target="_blank"
                   className="btn-secondary w-fit"

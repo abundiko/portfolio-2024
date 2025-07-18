@@ -10,6 +10,24 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
+    title: "Symphony Enterprise",
+    description:
+      "Website for Symphony Enterprise, an innovative music - artist - investor platform. Symphony bridges the gap between visionary artists and strategic investors.",
+    tech: ["Express.Js", "Next.js", "MongoDB", "Typescript"],
+    image: "symphony.png",
+    logo: "symphony-logo.jpeg",
+    live: "https://symphonyent.com",
+  },
+  {
+    title: "MBA Secured Ltd.",
+    description:
+      "Website for MBA Secured, an expert security company in the UK. MBA Secured LTD safeguards what matters most—your people, assets, and events.",
+    tech: ["React", "Next.js", "Tailwind CSS", "Typescript"],
+    image: "mba.png",
+    logo: "mba-logo.webp",
+    live: "https://mbasecuredltd.com",
+  },
+  {
     title: "Center Point Network",
     description:
       "Website for Center Point Multi Solutions Limited is an Information Technology company with its core focus on information technology and deployment of software solutions.",
