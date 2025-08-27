@@ -13,6 +13,9 @@ const config: Config = {
           DEFAULT: "#c6e1ff",
           dark: "#00002a",
         },
+        new: {
+          primary: "#1345fd"
+        },
         background: "#001",
       },
     },
