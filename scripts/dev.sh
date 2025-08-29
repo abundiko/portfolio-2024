@@ -1,5 +1,5 @@
 git add .
 
-git commit -m "initial commit"
+git commit -m "modified new/hero section"
 
 git push origin dev

@@ -47,7 +47,7 @@ export default function Copy({
           end: "bottom top",
           // once: true,
           // markers: true,
-
+          once: true,
           onEnter: () =>
             gsap.fromTo(splitText.lines, hiddenTween, visibleTween),
           onEnterBack: () =>
@@ -59,7 +59,7 @@ export default function Copy({
     });
 
     return () => {
-      console.log("cleanup");
+      // console.log("cleanup");
       split.revert();
     };
   }, [debouncedWidth]);
