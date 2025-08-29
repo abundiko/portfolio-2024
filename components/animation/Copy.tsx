@@ -52,8 +52,8 @@ export default function Copy({
             gsap.fromTo(splitText.lines, hiddenTween, visibleTween),
           onEnterBack: () =>
             gsap.fromTo(splitText.lines, hiddenTween, visibleTween),
-          onLeave: () => gsap.to(splitText.lines, hiddenTween),
-          onLeaveBack: () => gsap.to(splitText.lines, hiddenTween),
+          // onLeave: () => gsap.to(splitText.lines, hiddenTween),
+          // onLeaveBack: () => gsap.to(splitText.lines, hiddenTween),
         });
       },
     });
