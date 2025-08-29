@@ -40,7 +40,7 @@ export default function Footer() {
       <p className="text-gray-500 font-light text-sm ">
         copyright &copy; 2025
       </p>
-      <div className="relative -bottom-16 md:-bottom-16 xl:-bottom-20">
+      <div className="relative -bottom-14 md:-bottom-16 xl:-bottom-20">
         <p className="relative [text-shadow:0_0_2px_#555] text-gray-50 select-none text-5xl md:text-6xl xl:text-8xl font-bold leading-[-100px]">
           Abundiko
         </p>
