@@ -31,4 +31,4 @@ export const EXPERIENCES = [
     at: "HYVEN.",
     year: "2025",
   },
-].reverse();
+].reverse()

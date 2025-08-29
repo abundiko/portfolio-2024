@@ -1,11 +1,13 @@
 import PrimaryButton from "@/components/new/PrimaryButton";
 import HeroProfile from "./Hero.profile";
 import HeroText from "./Hero.text";
-import { BsLayoutTextSidebarReverse, BsGrid3X3Gap  } from "react-icons/bs";
+import { BsLayoutTextSidebarReverse, BsGrid3X3Gap } from "react-icons/bs";
+import HeroNav from "./Hero.nav";
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
+      <HeroNav />
       <div className="absolute w-full h-full bg-[url(/images/noise.jpg)] bg-cover animate-spin bg-no-repeat [animation-duration:3s] scale-[3]"></div>
       <div className="absolute w-full h-full bg-[radial-gradient(white,#ffffff88)]"></div>
       <div className="absolute w-full h-full bg-[radial-gradient(ellipse_at_top,#ffffff00,#ffffffcc,white)]"></div>
@@ -15,13 +17,17 @@ export default function Hero() {
           <div className="w-full mx-auto max-w-[800px] flex flex-col gap-8">
             <HeroProfile />
             <HeroText />
-            <div className="grid grid-cols-2 sm:flex gap-4 justify-center items-center">
+            <div className="grid grid-cols-2 mx-auto max-w-[600px] w-full gap-4">
               <PrimaryButton
                 icon={<BsLayoutTextSidebarReverse />}
                 title="My Resume"
+                href="/files/Abundance-resume-21-05-25.pdf"
+                download
+                blank
               />
               <PrimaryButton
-                icon={<BsGrid3X3Gap  />}
+                href="#PROJECTS"
+                icon={<BsGrid3X3Gap />}
                 title="My Projects"
               />
             </div>

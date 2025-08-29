@@ -6,6 +6,7 @@ export type Project = {
   logo?: string;
   live?: string;
   github?: string;
+  type: ("web" | "app")[];
 };
 
 export const PROJECTS: Project[] = [
@@ -17,6 +18,7 @@ export const PROJECTS: Project[] = [
     image: "symphony.png",
     logo: "symphony-logo.jpeg",
     live: "https://symphonyent.com",
+    type: ["web"],
   },
   {
     title: "MBA Secured Ltd.",
@@ -26,6 +28,7 @@ export const PROJECTS: Project[] = [
     image: "mba.png",
     logo: "mba-logo.webp",
     live: "https://mbasecuredltd.com",
+    type: ["web"],
   },
   {
     title: "Center Point Network",
@@ -35,6 +38,7 @@ export const PROJECTS: Project[] = [
     image: "cpn.png",
     logo: "cpn-logo.png",
     live: "https://cpntechterminal.com",
+    type: ["web"],
   },
   {
     title: "Movee - Movie App",
@@ -44,6 +48,7 @@ export const PROJECTS: Project[] = [
     image: "movee.png",
     logo: "movee-logo.png",
     live: "https://movee.vercel.app/",
+    type: ["web", "app"],
   },
   {
     title: "Aify global aluminum",
@@ -52,6 +57,7 @@ export const PROJECTS: Project[] = [
     image: "aify-global.png",
     logo: "aify-global-logo.png",
     live: "https://aify-global.com/",
+    type: ["web"],
   },
   {
     title: "OneSync - file sharing",
@@ -62,6 +68,7 @@ export const PROJECTS: Project[] = [
     logo: "onesync-logo.png",
     live: "https://onesync.netlify.app/",
     github: "https://github.com/abundiko/onesync-website",
+    type: ["web", "app"],
   },
   {
     title: "Quilly Blog",
@@ -72,6 +79,7 @@ export const PROJECTS: Project[] = [
     logo: "quilly-logo.png",
     live: "https://quilly-blog.vercel.app/",
     github: "https://github.com/abundiko/quilly",
+    type: ["web"],
   },
   {
     title: "Hardware Mall",
@@ -81,5 +89,6 @@ export const PROJECTS: Project[] = [
     image: "hardwaremall.png",
     logo: "hardwaremall-logo.png",
     live: "https://hardwaremall.io",
+    type: ["web"],
   },
 ];

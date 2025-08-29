@@ -4,7 +4,7 @@ import AboutStack from "./About.stack";
 
 export default function About() {
   return (
-    <section className="bg-white py-14 app-container">
+    <section id="ABOUT" className="bg-white py-14 app-container">
       <AboutMain />
       <AboutExperience />
       <AboutStack />
@@ -18,7 +18,8 @@ function AboutMain() {
       <div className="p-6">
         <Copy>
           <h2 className="font-bold text-4xl md:text-[4vw] leading-[1.1] uppercase text-gray-800">
-            About Me
+            About <br />
+            Me
           </h2>
         </Copy>
       </div>

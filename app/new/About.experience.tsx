@@ -8,7 +8,10 @@ export default function AboutExperience() {
       <div className="p-6">
         <Copy>
           <h2 className="font-bold text-4xl md:text-[4vw] leading-[1.1] uppercase text-gray-800">
-            Work Experience
+            Work
+            <br /> Expe
+            <br className="max-md:hidden" />
+            rience
           </h2>
         </Copy>
       </div>

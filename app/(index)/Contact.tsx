@@ -1,15 +1,8 @@
-'use client'
+"use client";
 
-import { ContactCard, ContactCardProps } from "@/components/cards/ContactCard";
+import { ContactCard } from "@/components/cards/ContactCard";
+import { CONTACT_INFO } from "@/data/contact";
 import { motion } from "framer-motion";
-import {
-  FaEnvelope,
-  FaFacebook,
-  FaGithub,
-  FaLinkedin,
-  FaWhatsapp,
-  FaXTwitter
-} from "react-icons/fa6";
 import { animateProps } from "./About";
 
 export default function Contact() {
@@ -17,16 +10,19 @@ export default function Contact() {
     <section id="Contact">
       <div className="container mx-auto flex flex-wrap-reverse justify-center mb-5 md:mb-none">
         <div className="w-11/12 md:w-8/12 md:pt-10 py-8 text-center md:text-left">
-        <motion.h3
-        {...animateProps}
-        className="font-bold text-2xl md:text-4xl"
-      > Get in Touch
-      </motion.h3>
+          <motion.h3
+            {...animateProps}
+            className="font-bold text-2xl md:text-4xl"
+          >
+            {" "}
+            Get in Touch
+          </motion.h3>
           <p className="w-full  mb-4 opacity-80">
-            I&apos;m always open to new opportunities and collaborations. <br /> Let&apos;s build that next-level product together!
+            I&apos;m always open to new opportunities and collaborations. <br />{" "}
+            Let&apos;s build that next-level product together!
           </p>
           <div className="flex flex-wrap justify-center md:justify-start gap-2">
-            {contactInfo.map((contact, index) => (
+            {CONTACT_INFO.map((contact, index) => (
               <ContactCard key={index} {...contact} />
             ))}
           </div>
@@ -35,45 +31,6 @@ export default function Contact() {
     </section>
   );
 }
-
-const contactInfo: ContactCardProps[] = [
-  {
-    title: "Email",
-    href: "mailto:abundiko111@gmail.com",
-    icon: <FaEnvelope />,
-    color: "#EA4335",
-  },
-  {
-    href: "https://www.linkedin.com/in/abundiko/",
-    icon: <FaLinkedin />,
-    title: "Linkedin",
-    color: "#0A66C2",
-  },
-  {
-    href: "https://facebook.com/abundiko",
-    icon: <FaFacebook />,
-    title: "Facebook",
-    color: "#1877F2",
-  },
-  {
-    href: "https://wa.me/+2347031594603",
-    icon: <FaWhatsapp />,
-    title: "Whatsapp",
-    color: "#25D366",
-  },
-  {
-    href: "https://github.com/abundiko",
-    icon: <FaGithub />,
-    title: "Github",
-    color: "#ddd",
-  },
-  {
-    href: "https://x.com/abundiko",
-    icon: <FaXTwitter />,
-    title: "Twitter",
-    color: "#1DA1F2",
-  },
-];
 
 export const old = `
 <div className="flex flex-wrap justify-center md:justify-start gap-2">
