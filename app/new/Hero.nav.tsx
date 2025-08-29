@@ -30,6 +30,6 @@ const navLinks = [
   },
   {
     title: "Portfolio",
-    href: "#WORK",
+    href: "#PROJECTS",
   },
 ];
