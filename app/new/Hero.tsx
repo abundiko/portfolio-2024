@@ -20,7 +20,7 @@ export default function Hero() {
             <div className="grid grid-cols-2 mx-auto max-w-[600px] w-full gap-4">
               <PrimaryButton
                 icon={<BsLayoutTextSidebarReverse />}
-                title="My Resume"
+                title="Resume"
                 href="/files/Abundance-resume-21-05-25.pdf"
                 download
                 blank
@@ -28,7 +28,7 @@ export default function Hero() {
               <PrimaryButton
                 href="#PROJECTS"
                 icon={<BsGrid3X3Gap />}
-                title="My Projects"
+                title="Projects"
               />
             </div>
           </div>
