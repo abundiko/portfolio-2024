@@ -1,4 +1,3 @@
-import Copy from "@/components/animation/Copy";
 import { CONTACT_INFO } from "@/data/contact";
 import Link from "next/link";
 import { CSSProperties } from "react";
@@ -8,17 +7,17 @@ export default function Footer() {
     <footer
       id="CONTACT"
      className="pt-28 pb-10 overflow-hidden app-container bg-gray-50 grid gap-4 md:gap-6">
-      <Copy>
+      {/* <Copy> */}
         <h2 className="font-semibold text-3xl lg:text-3xl">
           Let&apos;s work <br />
           Together
         </h2>
-      </Copy>
-      <Copy>
+      {/* </Copy> */}
+      {/* <Copy> */}
         <p className="text-gray-500 font-medium text-lg md:text-xl w-10/12 max-w-[400px]">
           I&apos;m always open to discussing new projects and creative ideas.
         </p>
-      </Copy>
+      {/* </Copy> */}
       <div className="grid grid-cols-3 md:grid-cols-6 max-w-[800px]">
         {CONTACT_INFO.map((contact, i) => (
           <Link
