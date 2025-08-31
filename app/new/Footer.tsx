@@ -19,7 +19,7 @@ export default function Footer() {
           I&apos;m always open to discussing new projects and creative ideas.
         </p>
       </Copy>
-      <div className="grid grid-cols-4 md:grid-cols-6 max-w-[800px]">
+      <div className="grid grid-cols-3 md:grid-cols-6 max-w-[800px]">
         {CONTACT_INFO.map((contact, i) => (
           <Link
             href={contact.href}

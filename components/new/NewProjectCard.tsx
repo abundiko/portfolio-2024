@@ -59,7 +59,7 @@ export default function NewProjectCard(props: Props) {
       </div>
       <div className="flex flex-col gap-4 text-gray-800">
         <h3 className="font-semibold text-2xl md:text-3xl">{project.title}</h3>
-        <p className="max-md:text-sm text-gray-600">{project.description}</p>
+        <p className="max-md:text-sm text-gray-600 lg:w-10/12">{project.description}</p>
         <div className="flex flex-wrap">
           {project.tech.map((tech, i) => (
             <span

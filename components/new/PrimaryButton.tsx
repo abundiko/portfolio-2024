@@ -13,7 +13,7 @@ export default function PrimaryButton({
   title,
   href,
   blank,
-  download
+  download,
 }: PrimaryButtonProps) {
   return (
     <Link
@@ -25,7 +25,7 @@ export default function PrimaryButton({
       <div className="rounded-[0px] aspect-square inline-flex justify-center transition-all duration-500 items-center bg-new-primary p-3 text-white shadow-[0_0_0_0px_rgba(19,69,253,1)] group-hover:shadow-[0_0_0_400px_rgba(19,69,253,1)]">
         {icon}
       </div>
-      <p className="relative leading-0 overflow-hidden pr-3">
+      <p className="relative leading-0 overflow-hidden pr-3 h-fit">
         <span className="opacity-0">{title}</span>
         <span className="absolute bottom-0 left-0 select-none group-hover:bottom-full group-hover:opacity-0 transition-all duration-500">
           {title}
