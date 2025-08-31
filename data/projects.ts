@@ -21,6 +21,16 @@ export const PROJECTS: Project[] = [
     type: ["web"],
   },
   {
+    title: "UK Web Designers",
+    description:
+      "Website for UK Web Designers, web dev agency in the UK. We build professional websites for businesses and organizations.",
+    tech: ["React", "Next.js", "Tailwind CSS", "Typescript"],
+    image: "uwd.png",
+    logo: "uwd-logo.webp",
+    live: "https://ukwebdesigners.co.uk",
+    type: ["web"],
+  },
+  {
     title: "MBA Secured Ltd.",
     description:
       "Website for MBA Secured, an expert security company in the UK. MBA Secured LTD safeguards what matters most—your people, assets, and events.",
@@ -47,18 +57,18 @@ export const PROJECTS: Project[] = [
     tech: ["Next.js", "React native", "Mongo DB", "Typescript", "Tailwind CSS"],
     image: "movee.png",
     logo: "movee-logo.png",
-    live: "https://movee.vercel.app/",
+    live: "https://movee.vercel.app",
     type: ["web", "app"],
   },
-  {
-    title: "Aify global aluminum",
-    description: "An Ecommerce website for aify-global aluminum company",
-    tech: ["HTML", "Javascript", "Tailwind CSS"],
-    image: "aify-global.png",
-    logo: "aify-global-logo.png",
-    live: "https://aify-global.com/",
-    type: ["web"],
-  },
+  // {
+  //   title: "Aify global aluminum",
+  //   description: "An Ecommerce website for aify-global aluminum company",
+  //   tech: ["HTML", "Javascript", "Tailwind CSS"],
+  //   image: "aify-global.png",
+  //   logo: "aify-global-logo.png",
+  //   live: "https://aify-global.com/",
+  //   type: ["web"],
+  // },
   {
     title: "OneSync - file sharing",
     description:
@@ -81,14 +91,14 @@ export const PROJECTS: Project[] = [
     github: "https://github.com/abundiko/quilly",
     type: ["web"],
   },
-  {
-    title: "Hardware Mall",
-    description:
-      "An Ecommerce website for shopping electronics (Frontend developer @ Hardware House)",
-    tech: ["React", "Next.js", "Tailwind CSS", "Typescript"],
-    image: "hardwaremall.png",
-    logo: "hardwaremall-logo.png",
-    live: "https://hardwaremall.io",
-    type: ["web"],
-  },
+  // {
+  //   title: "Hardware Mall",
+  //   description:
+  //     "An Ecommerce website for shopping electronics (Frontend developer @ Hardware House)",
+  //   tech: ["React", "Next.js", "Tailwind CSS", "Typescript"],
+  //   image: "hardwaremall.png",
+  //   logo: "hardwaremall-logo.png",
+  //   live: "https://hardwaremall.io",
+  //   type: ["web"],
+  // },
 ];
