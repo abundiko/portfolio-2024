@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function HeroText() {
   return (
     <div className="flex flex-wrap gap-x-2 gap-y-2 md:gap-y-4 font-bold text-4xl sm:text-5xl md:text-6xl justify-center items-center content-center">
-      {"I create web visually appealing experiences android that drive ios results"
+      {"Delivering android responsive, performant websites web and apps ios that users love."
         .split(" ")
         .map((item, i) => {
           if (ICONS.includes(item))

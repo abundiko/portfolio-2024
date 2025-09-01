@@ -1,5 +1,5 @@
 git add .
 
-git commit -m "updated projects"
+git commit -m "updated metadata, banner, hero and about of /new"
 
 git push origin dev

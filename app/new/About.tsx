@@ -30,9 +30,14 @@ function AboutMain() {
             creating innovative solutions to complex problems. With a strong
             foundation in various programming languages and frameworks, I&apos;m
             constantly expanding my skill set to stay at the forefront of
-            technology. My experience spans from developing frontend design
-            systems to crafting intuitive user interfaces. I&apos;m committed to
-            writing clean, efficient code and collaborating effectively in team
+            technology.{" "}
+            <strong>
+              I&apos;ve delivered pixel-perfect solutions for 40+ projects
+              worldwide.
+            </strong>{" "}
+            My experience spans from developing frontend design systems to
+            crafting intuitive user interfaces. I&apos;m committed to writing
+            clean, efficient code and collaborating effectively in team
             environments with attention to detail.
           </p>
         </Copy>
