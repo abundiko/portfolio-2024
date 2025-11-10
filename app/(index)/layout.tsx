@@ -1,29 +1,27 @@
-"use client";
+import { DatabuddyAnalitics } from "@/components/analitics/DataBuddyAnalitics";
+import { staticMetadata } from "@/functions/metadata";
+import { Metadata } from "next";
+import { Work_Sans, Bricolage_Grotesque } from "next/font/google";
+const workSans = Work_Sans({ subsets: ["latin"] });
+const bricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
 
-import { useGlobalState } from "@/state";
-import { useMemo } from "react";
+export const metadata: Metadata = staticMetadata({
+  title:
+    "Abundance Ken Dickson (Abundiko) - FullStack Developer | Delivering responsive, performant websites and apps that users love.",
+  description:
+    "I've delivered pixel-perfect solutions for over 40 projects, teams and startups worldwide.",
+  img: "/images/banner-new.png",
+});
 
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  const { pageIndex } = useGlobalState();
-  const bgClass = useMemo(() => {
-    if (pageIndex === 1) return "!bg-blue-300";
-    if (pageIndex === 2) return "!bg-black";
-    return "!bg-[#efefef]";
-  }, [pageIndex]);
-
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html
-      lang="en"
-      className={`${inter.className} antialiased ${bgClass} transition-colors duration-1000`}
+      className={`antialiased ${workSans.className} ${bricolageGrotesque.className}`}
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        <DatabuddyAnalitics />
+      </body>
     </html>
   );
 }

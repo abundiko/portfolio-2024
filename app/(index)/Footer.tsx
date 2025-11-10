@@ -6,17 +6,18 @@ export default function Footer() {
   return (
     <footer
       id="CONTACT"
-     className="pt-28 pb-10 overflow-hidden app-container bg-gray-50 grid gap-4 md:gap-6">
+      className="pt-28 pb-10 overflow-hidden app-container bg-gray-50 grid gap-4 md:gap-6"
+    >
       {/* <Copy> */}
-        <h2 className="font-semibold text-3xl lg:text-3xl">
-          Let&apos;s work <br />
-          Together
-        </h2>
+      <h2 className="font-semibold text-3xl lg:text-3xl">
+        Let&apos;s work <br />
+        Together
+      </h2>
       {/* </Copy> */}
       {/* <Copy> */}
-        <p className="text-gray-500 font-medium text-lg md:text-xl w-10/12 max-w-[400px]">
-          I&apos;m always open to discussing new projects and creative ideas.
-        </p>
+      <p className="text-gray-500 font-medium text-lg md:text-xl w-10/12 max-w-[400px]">
+        I&apos;m always open to discussing new projects and creative ideas.
+      </p>
       {/* </Copy> */}
       <div className="grid grid-cols-3 md:grid-cols-6 max-w-[800px]">
         {CONTACT_INFO.map((contact, i) => (
@@ -36,9 +37,7 @@ export default function Footer() {
           </Link>
         ))}
       </div>
-      <p className="text-gray-500 font-light text-sm ">
-        copyright &copy; 2025
-      </p>
+      <p className="text-gray-500 font-light text-sm ">copyright &copy; 2025</p>
       <div className="relative -bottom-14 md:-bottom-16 xl:-bottom-20">
         <p className="relative [text-shadow:0_0_2px_#555] text-gray-50 select-none text-5xl md:text-6xl xl:text-8xl font-bold leading-[-100px]">
           Abundiko

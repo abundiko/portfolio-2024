@@ -31,6 +31,22 @@ export const PROJECTS: Project[] = [
     type: ["web"],
   },
   {
+    title: "VeeTeeYou - fast, affordable topups",
+    description:
+      "A mobile app for quick data and airtime purchase in Nigeria. beautiful interface and straightforward user experience.",
+    tech: [
+      "Fintech",
+      "React native",
+      "Expo",
+      "Animations",
+      "Mongo DB",
+      "Typescript",
+    ],
+    image: "veeteeyou.png",
+    logo: "veeteeyou-logo.png",
+    type: ["app"],
+  },
+  {
     title: "MBA Secured Ltd.",
     description:
       "Website for MBA Secured, an expert security company in the UK. MBA Secured LTD safeguards what matters most—your people, assets, and events.",

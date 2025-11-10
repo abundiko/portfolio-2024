@@ -1,18 +1,17 @@
-import { redirect, RedirectType } from "next/navigation";
 import About from "./About";
-import Contact from "./Contact";
 import Hero from "./Hero";
+import { ReactLenis } from "lenis/react";
 import Projects from "./Projects";
+import Footer from "./Footer";
 
-export default function Home() {
-  redirect("/new", RedirectType.replace);
-
+export default function Page() {
   return (
-    <main>
+    <>
+      <ReactLenis root />
       <Hero />
       <About />
       <Projects />
-      <Contact />
-    </main>
+      <Footer />
+    </>
   );
 }
