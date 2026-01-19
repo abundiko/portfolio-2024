@@ -10,8 +10,8 @@ export function DatabuddyAnalitics() {
         trackOutgoingLinks={true}
         trackInteractions={true}
         trackScrollDepth={true}
-        trackExitIntent={true}
-        trackBounceRate={true}
+        // trackExitIntent={true}
+        // trackBounceRate={true}
         trackWebVitals={true}
         trackErrors={true}
         enableBatching={true}
