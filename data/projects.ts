@@ -21,6 +21,16 @@ export const PROJECTS: Project[] = [
     type: ["web"],
   },
   {
+    title: "MBA Secured Ltd.",
+    description:
+      "Website for MBA Secured, an expert security company in the UK. MBA Secured LTD safeguards what matters most—your people, assets, and events.",
+    tech: ["React", "Next.js", "Tailwind CSS", "Typescript"],
+    image: "mba.png",
+    logo: "mba-logo.webp",
+    live: "https://mbasecuredltd.com",
+    type: ["web"],
+  },
+  {
     title: "UK Web Designers",
     description:
       "Website for UK Web Designers, web dev agency in the UK. We build professional websites for businesses and organizations.",
@@ -29,6 +39,16 @@ export const PROJECTS: Project[] = [
     logo: "uwd-logo.webp",
     live: "https://ukwebdesigners.co.uk",
     type: ["web"],
+  },
+  {
+    title: "Skana",
+    description:
+      "Skana is the mobile app that makes transactions and transfers seamless. Send funds and get paid with username or QR code.",
+    tech: ["Expo", "React native", "Typescript", "Tailwind CSS"],
+    image: "skana.png",
+    logo: "skana-logo.png",
+    github: "https://github.com/abundiko/skana",
+    type: ["app"],
   },
   {
     title: "VeeTeeYou - fast, affordable topups",
@@ -45,16 +65,6 @@ export const PROJECTS: Project[] = [
     image: "veeteeyou.png",
     logo: "veeteeyou-logo.png",
     type: ["app"],
-  },
-  {
-    title: "MBA Secured Ltd.",
-    description:
-      "Website for MBA Secured, an expert security company in the UK. MBA Secured LTD safeguards what matters most—your people, assets, and events.",
-    tech: ["React", "Next.js", "Tailwind CSS", "Typescript"],
-    image: "mba.png",
-    logo: "mba-logo.webp",
-    live: "https://mbasecuredltd.com",
-    type: ["web"],
   },
   {
     title: "Center Point Network",
