@@ -84,12 +84,12 @@ const jsonLd = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <Head>
-        <Script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </Head>
+      {/* <Head> */}
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      {/* </Head> */}
       {children}
       <DatabuddyAnalitics />
     </>
