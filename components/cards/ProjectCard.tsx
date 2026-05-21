@@ -39,8 +39,8 @@ export default function ProjectCard({
         <Image
           src={`/images/projects/${image}`}
           alt={title}
-          height={500}
-          width={600}
+          height={700}
+          width={900}
           className="rounded-2xl aspect-[1920/1080] object-cover bg-slate-200 w-full border"
         />
         <div className="flex flex-col gap-4 justify-center">
