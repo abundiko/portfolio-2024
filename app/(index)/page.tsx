@@ -6,12 +6,12 @@ import Footer from "./Footer";
 
 export default function Page() {
   return (
-    <>
+    <main>
       <ReactLenis root />
       <Hero />
       <About />
       <Projects />
       <Footer />
-    </>
+    </main>
   );
 }

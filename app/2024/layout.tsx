@@ -19,11 +19,8 @@ export default function RootLayout({
   }, [pageIndex]);
 
   return (
-    <html
-      lang="en"
-      className={`${inter.className} antialiased ${bgClass} transition-colors duration-1000`}
-    >
-      <body>{children}</body>
-    </html>
+    <div className={`${inter.className} antialiased ${bgClass} transition-colors duration-1000`}>
+      {children}
+    </div>
   );
 }

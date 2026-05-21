@@ -1,6 +1,10 @@
 import { Metadata } from "next";
 import "./globals.css";
 import { staticMetadata } from "@/functions/metadata";
+import { Work_Sans, Bricolage_Grotesque } from "next/font/google";
+
+const workSans = Work_Sans({ subsets: ["latin"] });
+const bricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = staticMetadata({
   title: "Abundiko - Software built to perfection",
@@ -14,5 +18,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <>{children}</>;
+  return (
+    <html className={`antialiased ${workSans.className} ${bricolageGrotesque.className}`}>
+      <body>{children}</body>
+    </html>
+  );
 }

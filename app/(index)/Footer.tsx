@@ -8,6 +8,52 @@ export default function Footer() {
       id="CONTACT"
       className="pt-28 pb-10 overflow-hidden app-container bg-gray-50 grid gap-4 md:gap-6"
     >
+      <section className="grid gap-6 py-8 border-b border-gray-200" aria-labelledby="faq-heading">
+        <h2 id="faq-heading" className="font-semibold text-3xl">
+          Frequently Asked Questions
+        </h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="flex flex-col gap-2">
+            <h3 className="font-semibold text-gray-800">
+              What services do you offer?
+            </h3>
+            <p className="text-gray-600 text-sm">
+              FullStack web and mobile development, including responsive
+              websites, performant web applications, and cross-platform mobile
+              apps using React, Next.js, React Native, and modern technologies.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h3 className="font-semibold text-gray-800">
+              Are you available for freelance work?
+            </h3>
+            <p className="text-gray-600 text-sm">
+              Yes, I&apos;m always open to discussing new projects and
+              creative ideas. Feel free to reach out via any of the channels
+              below.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h3 className="font-semibold text-gray-800">
+              What technologies do you work with?
+            </h3>
+            <p className="text-gray-600 text-sm">
+              I specialize in React, Next.js, React Native, TypeScript,
+              Node.js, and a wide range of modern frontend and backend
+              technologies.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h3 className="font-semibold text-gray-800">
+              How many projects have you completed?
+            </h3>
+            <p className="text-gray-600 text-sm">
+              I&apos;ve delivered over 40 projects worldwide, ranging from
+              frontend design systems to full-stack applications.
+            </p>
+          </div>
+        </div>
+      </section>
       {/* <Copy> */}
       <h2 className="font-semibold text-3xl lg:text-3xl">
         Let&apos;s work <br />

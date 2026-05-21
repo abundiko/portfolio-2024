@@ -10,16 +10,16 @@ export type Project = {
 };
 
 export const PROJECTS: Project[] = [
-  {
-    title: "Symphony Enterprise",
-    description:
-      "Website for Symphony Enterprise, an innovative music - artist - investor platform. Symphony bridges the gap between visionary artists and strategic investors.",
-    tech: ["Express.Js", "Next.js", "MongoDB", "Typescript"],
-    image: "symphony.png",
-    logo: "symphony-logo.jpeg",
-    live: "https://symphonyent.com",
-    type: ["web"],
-  },
+  // {
+  //   title: "Symphony Enterprise",
+  //   description:
+  //     "Website for Symphony Enterprise, an innovative music - artist - investor platform. Symphony bridges the gap between visionary artists and strategic investors.",
+  //   tech: ["Express.Js", "Next.js", "MongoDB", "Typescript"],
+  //   image: "symphony.png",
+  //   logo: "symphony-logo.jpeg",
+  //   live: "https://symphonyent.com",
+  //   type: ["web"],
+  // },
   {
     title: "MBA Secured Ltd.",
     description:
@@ -31,13 +31,42 @@ export const PROJECTS: Project[] = [
     type: ["web"],
   },
   {
-    title: "UK Web Designers",
+    title: "CitiWheels - ride hailing",
     description:
-      "Website for UK Web Designers, web dev agency in the UK. We build professional websites for businesses and organizations.",
+      "Ride hailing platform for drivers and passengers with secure and affordable rides, payments and ratings.",
+    tech: [
+      "React Native",
+      "Expo",
+      "Google Maps",
+      "Next.js",
+      "Tailwind CSS",
+      "Local server",
+    ],
+    image: "citiwheels.png",
+    logo: "citiwheels-logo.png",
+    live: "https://citiwheels.app",
+    // github: "https://github.com/abundiko/citiwheels",
+    type: ["web", "app"],
+  },
+  {
+    title: "Cesspro Technologies",
+    description:
+      "Website for Cesspro Technologies, a web development agency based in the UK. We build professional websites for businesses and organizations.",
     tech: ["React", "Next.js", "Tailwind CSS", "Typescript"],
-    image: "uwd.png",
-    logo: "uwd-logo.webp",
-    live: "https://ukwebdesigners.co.uk",
+    image: "cesspro.png",
+    logo: "cesspro-logo.webp",
+    live: "https://cessprotech.com",
+    type: ["web"],
+  },
+  {
+    title: "Shiftly - Staff Scheduling",
+    description:
+      "Shiftly is the all-in-one platform for modern teams to schedule shifts, plan events, communicate instantly, and track performance.",
+    tech: ["React", "Next.js", "Tailwind CSS", "Typescript"],
+    image: "shiftly.png",
+    logo: "shiftly-logo.png",
+    live: "https://shiftly-orpin.vercel.app",
+    // github: "https://github.com/abundiko/shiftly",
     type: ["web"],
   },
   {
@@ -66,16 +95,16 @@ export const PROJECTS: Project[] = [
     logo: "veeteeyou-logo.png",
     type: ["app"],
   },
-  {
-    title: "Center Point Network",
-    description:
-      "Website for Center Point Multi Solutions Limited is an Information Technology company with its core focus on information technology and deployment of software solutions.",
-    tech: ["React", "Next.js", "Tailwind CSS", "Typescript"],
-    image: "cpn.png",
-    logo: "cpn-logo.png",
-    live: "https://cpntechterminal.com",
-    type: ["web"],
-  },
+  // {
+  //   title: "Center Point Network",
+  //   description:
+  //     "Website for Center Point Multi Solutions Limited is an Information Technology company with its core focus on information technology and deployment of software solutions.",
+  //   tech: ["React", "Next.js", "Tailwind CSS", "Typescript"],
+  //   image: "cpn.png",
+  //   logo: "cpn-logo.png",
+  //   live: "https://cpntechterminal.com",
+  //   type: ["web"],
+  // },
   {
     title: "Movee - Movie App",
     description:

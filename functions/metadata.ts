@@ -5,12 +5,14 @@ export type MetadataProps = {
   title: string;
   description: string;
   img?: string;
+  canonical?: string;
 };
 
 export function staticMetadata({
   title,
   description,
   img = "/images/features.jpg",
+  canonical,
 }: MetadataProps): Metadata {
   const keywords = [
     "abundiko",
@@ -30,6 +32,9 @@ export function staticMetadata({
     title,
     description,
     metadataBase: new URL(HOST),
+    alternates: {
+      canonical: canonical || "/",
+    },
     icons: [
       buildImg("/images/favicon.ico"),
       buildImg("/images/favicon.png"),

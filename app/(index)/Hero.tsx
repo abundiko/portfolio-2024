@@ -7,6 +7,11 @@ import HeroNav from "./Hero.nav";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
+      <h1 className="sr-only">
+        Abundance Ken-Dickson (Abundiko) - FullStack Developer specializing in
+        responsive websites, performant web apps, and cross-platform mobile
+        applications
+      </h1>
       <HeroNav />
       <div className="absolute w-full h-full bg-[url(/images/noise.jpg)] bg-cover animate-spin bg-no-repeat [animation-duration:3s] scale-[3]"></div>
       <div className="absolute w-full h-full bg-[radial-gradient(white,#ffffff88)]"></div>
