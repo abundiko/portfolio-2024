@@ -2,10 +2,11 @@ import { DatabuddyAnalitics } from "@/components/analitics/DataBuddyAnalitics";
 import { staticMetadata } from "@/functions/metadata";
 import { Metadata } from "next";
 import { HOST } from "@/constants";
+import Head from "next/head";
+import Script from "next/script";
 
 export const metadata: Metadata = staticMetadata({
-  title:
-    "Abundiko - FullStack Developer | Responsive websites & apps",
+  title: "Abundiko - FullStack Developer | Responsive websites & apps",
   description:
     "I've delivered pixel-perfect solutions for over 40 projects, teams and startups worldwide.",
   img: "/images/banner-new.png",
@@ -83,10 +84,12 @@ const jsonLd = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <Head>
+        <Script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </Head>
       {children}
       <DatabuddyAnalitics />
     </>
