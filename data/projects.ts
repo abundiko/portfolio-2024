@@ -49,6 +49,17 @@ export const PROJECTS: Project[] = [
     type: ["web", "app"],
   },
   {
+    title: "Epignosis - Bible App",
+    description:
+      "Bible App with Bible translations, verse of the day, book summary, audio and offline access.",
+    tech: ["React Native", "Expo", "Next.js", "Tailwind CSS", "Offline Access"],
+    image: "epignosis.png",
+    logo: "epignosis-logo.webp",
+    live: "https://epignosis-bible.vercel.app",
+    // github: "https://github.com/abundiko/citiwheels",
+    type: ["web", "app"],
+  },
+  {
     title: "Cesspro Technologies",
     description:
       "Website for Cesspro Technologies, a web development agency based in the UK. We build professional websites for businesses and organizations.",
