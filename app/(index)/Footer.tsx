@@ -8,7 +8,7 @@ export default function Footer() {
       id="CONTACT"
       className="pt-28 pb-10 overflow-hidden app-container bg-gray-50 grid gap-4 md:gap-6"
     >
-      <section className="grid gap-6 py-8 border-b border-gray-200" aria-labelledby="faq-heading">
+      {/* <section className="grid gap-6 py-8 border-b border-gray-200" aria-labelledby="faq-heading">
         <h2 id="faq-heading" className="font-semibold text-3xl">
           Frequently Asked Questions
         </h2>
@@ -53,7 +53,7 @@ export default function Footer() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* <Copy> */}
       <h2 className="font-semibold text-3xl lg:text-3xl">
         Let&apos;s work <br />
