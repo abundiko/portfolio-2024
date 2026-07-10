@@ -2,6 +2,11 @@ export type Experience = (typeof EXPERIENCES)[number];
 
 export const EXPERIENCES = [
   {
+    role: "Software Engineer",
+    at: "CitiWheels.",
+    year: "2026",
+  },
+  {
     role: "Mobile Developer",
     at: "Binvabian Tech.",
     year: "2022-2025",
@@ -31,4 +36,4 @@ export const EXPERIENCES = [
     at: "HYVEN.",
     year: "2025",
   },
-].reverse()
+].reverse();
