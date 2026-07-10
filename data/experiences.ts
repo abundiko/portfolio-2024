@@ -7,11 +7,6 @@ export const EXPERIENCES = [
     year: "2026",
   },
   {
-    role: "Mobile Developer",
-    at: "Binvabian Tech.",
-    year: "2022-2025",
-  },
-  {
     role: "Frontend Developer",
     at: "Aptech Computer Edu.",
     year: "2023",
@@ -35,5 +30,10 @@ export const EXPERIENCES = [
     role: "Lead Frontend Developer",
     at: "HYVEN.",
     year: "2025",
+  },
+  {
+    role: "Mobile Developer",
+    at: "Binvabian Tech.",
+    year: "2022-2025",
   },
 ].reverse();
